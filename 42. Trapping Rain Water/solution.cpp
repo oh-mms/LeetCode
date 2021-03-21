@@ -14,7 +14,7 @@ public:
 			if (height[rIdx] < minHeight) v[rIdx] = minHeight - height[rIdx];
 
 			if (height[lIdx] < height[rIdx]) lIdx++;
-			else											 rIdx--;
+			else				 rIdx--;
 
 			tempHeight = min(height[lIdx], height[rIdx]);
 			minHeight = max(tempHeight, minHeight);
