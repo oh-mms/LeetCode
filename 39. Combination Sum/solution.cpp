@@ -1,7 +1,7 @@
 class Solution {
 public:
 	bool findCombination(vector<int>& candidates,
-		vector<int> v,
+		vector<int>& v,
 		int remain,
 		vector<vector<int>>& answer)
 	{
