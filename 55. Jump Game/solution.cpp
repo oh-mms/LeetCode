@@ -23,8 +23,8 @@ public:
 			return true;
 
 		bool b;
-		if (Jump(nums, 0, nums.size() - 1)) b = true;
-		else                             b = false;
+		if (Jump(nums, 0, nums.size() - 1))	b = true;
+		else                             	b = false;
 
 		return b;
 	}
