@@ -9,10 +9,10 @@ public:
 
 		int maxIdx = -1;
 		for (int i = nums[index]; i >= 1; --i) {
-			if (index + i > target)                     return true;
+			if (index + i > target)                    	return true;
 			if (maxIdx < index + i + nums[index + i])       maxIdx = index + i + nums[index + i];
-			else                                     continue;
-			if (Jump(nums, index + i, target))          return true;
+			else                                     	continue;
+			if (Jump(nums, index + i, target))          	return true;
 		}
 
 		return false;
@@ -23,8 +23,8 @@ public:
 			return true;
 
 		bool b;
-		if (Jump(nums, 0, nums.size() - 1)) b = true;
-		else                             b = false;
+		if (Jump(nums, 0, nums.size() - 1))	b = true;
+		else                             	b = false;
 
 		return b;
 	}
