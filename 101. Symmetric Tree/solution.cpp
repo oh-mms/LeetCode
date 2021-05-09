@@ -1,6 +1,6 @@
+// Reference Version
 class Solution
 {
-// Reference Version
 public:
 	bool CheckSymmetric(TreeNode& lNode, TreeNode& rNode)
 	{
@@ -12,15 +12,15 @@ public:
 		if (lNode.left != nullptr)
 		{
 			if (rNode.right != nullptr)	flag &= CheckSymmetric(*lNode.left, *rNode.right);
-			else										return false;
+			else				return false;
 		}
 		else if (rNode.right != nullptr)
 			return false;
 
 		if (lNode.right != nullptr)
 		{
-			if (rNode.left != nullptr)		flag &= CheckSymmetric(*lNode.right, *rNode.left);
-			else										return false;
+			if (rNode.left != nullptr)	flag &= CheckSymmetric(*lNode.right, *rNode.left);
+			else				return false;
 		}
 		else if (rNode.left != nullptr)
 			return false;
